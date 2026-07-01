@@ -187,7 +187,7 @@
   .calc-card{
     background:var(--white); border:1px solid var(--hairline-2); border-radius:var(--r-lg);
     box-shadow:var(--shadow-soft); padding:clamp(28px,4vw,48px);
-    display:grid; grid-template-columns:1.1fr .9fr; gap:clamp(28px,4vw,52px); align-items:stretch;
+    display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(28px,4vw,52px); align-items:stretch;
   }
   .calc-q{margin-bottom:26px}
   .calc-q > label{display:block; font-weight:600; font-size:15px; margin-bottom:12px}
@@ -303,7 +303,7 @@
   @media (max-width:980px){
     .hero-grid{grid-template-columns:1fr}
     .scene{order:-1; max-width:520px}
-    .calc-card{grid-template-columns:1fr}
+    .calc-card{grid-template-columns:minmax(0,1fr)}
     .cta-grid{grid-template-columns:1fr}
     .steps{grid-template-columns:repeat(2,1fr)}
     .stats .wrap{grid-template-columns:repeat(2,1fr)}
